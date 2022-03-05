@@ -6,8 +6,8 @@
             <form action="" method="post">
                 <h2 class="text-center text-primary mb-3">Registrasi Akun</h2>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="NISN" required>
-                    <label for="floatingInput">NISN</label>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+                    <label for="floatingInput">Email</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingPassword" placeholder="Nama" required>
