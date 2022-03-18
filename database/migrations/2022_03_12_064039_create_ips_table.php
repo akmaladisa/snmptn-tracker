@@ -16,12 +16,12 @@ class CreateIpsTable extends Migration
         Schema::create('ips', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->int("matematika");
-            $table->int("b-inggris");
-            $table->int("b-indonesia");
-            $table->int("sosiologi");
-            $table->int("ekonomi");
-            $table->int("geografi");
+            $table->integer("matematika");
+            $table->integer("b-inggris");
+            $table->integer("b-indonesia");
+            $table->integer("sosiologi");
+            $table->integer("ekonomi");
+            $table->integer("geografi");
             $table->timestamps();
         });
     }

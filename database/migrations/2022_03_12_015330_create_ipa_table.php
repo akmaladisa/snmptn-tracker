@@ -16,12 +16,12 @@ class CreateIpaTable extends Migration
         Schema::create('ipa', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->int("matematika");
-            $table->int("b-inggris");
-            $table->int("b-indonesia");
-            $table->int("kimia");
-            $table->int("fisika");
-            $table->int("biologi");
+            $table->integer("matematika");
+            $table->integer("b-inggris");
+            $table->integer("b-indonesia");
+            $table->integer("kimia");
+            $table->integer("fisika");
+            $table->integer("biologi");
             $table->timestamps();
         });
     }
