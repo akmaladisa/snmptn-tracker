@@ -43,4 +43,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function ipa()
+    {
+        return $this->hasOne(IPA::class);
+    }
+
+    public function ips()
+    {
+        return $this->hasOne(IPS::class);
+    }
 }

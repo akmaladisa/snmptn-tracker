@@ -1,4 +1,4 @@
-@extends("layouts.main");
+@extends("guest-layout.main");
 
 @section('content')
     <div class="row d-flex justify-content-center">
