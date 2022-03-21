@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('guest.login');
 })->middleware('guest');
 
-Route::post("/login", [LoginController::class, 'authenticate']);
+Route::post("/login", [LoginController::class, 'authenticate'])->name('login');
 
 Route::get("/signout", [LoginController::class, 'signout'])->middleware('auth');
 

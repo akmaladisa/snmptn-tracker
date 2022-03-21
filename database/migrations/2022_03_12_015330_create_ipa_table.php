@@ -17,8 +17,8 @@ class CreateIpaTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->integer("matematika");
-            $table->integer("b-inggris");
-            $table->integer("b-indonesia");
+            $table->integer("binggris");
+            $table->integer("bindonesia");
             $table->integer("kimia");
             $table->integer("fisika");
             $table->integer("biologi");

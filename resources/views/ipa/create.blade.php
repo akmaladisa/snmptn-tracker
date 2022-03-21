@@ -31,27 +31,27 @@
                     <label for="floatingSelect">Nama Siswa</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nilai Matematika" name="matematika">
+                    <input required max="100" min="0" type="number" class="form-control" id="floatingInput" placeholder="Nilai Matematika" name="matematika">
                     <label for="floatingInput">matematika</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nilai B. Indonesia" name="b-indonesia">
+                    <input required max="100" min="0" type="number" class="form-control" id="floatingInput" placeholder="Nilai B. Indonesia" name="bindonesia">
                     <label for="floatingInput">Bahasa Indonesia</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nilai B. Inggris" name="b-inggris">
+                    <input required max="100" min="0" type="number" class="form-control" id="floatingInput" placeholder="Nilai B. Inggris" name="binggris">
                     <label for="floatingInput">Bahasa Inggris</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nilai Kimia" name="kimia">
+                    <input required max="100" min="0" type="number" class="form-control" id="floatingInput" placeholder="Nilai Kimia" name="kimia">
                     <label for="floatingInput">Kimia</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nilai Fisika" name="fisika">
+                    <input required max="100" min="0" type="number" class="form-control" id="floatingInput" placeholder="Nilai Fisika" name="fisika">
                     <label for="floatingInput">Fisika</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="Nilai Biologi" name="biologi">
+                    <input required max="100" min="0" type="number" class="form-control" id="floatingInput" placeholder="Nilai Biologi" name="biologi">
                     <label for="floatingInput">Biologi</label>
                 </div>
                 <div class="d-grid">

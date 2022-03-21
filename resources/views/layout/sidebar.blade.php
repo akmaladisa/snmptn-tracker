@@ -34,7 +34,13 @@
                 </a>
             </li> --}}
 
-            @if (Auth::user()->role == "admin")    
+            @if (Auth::user()->role == "admin")
+                <li class="nav-item">
+                    <a class="nav-link {{ Request::is('dashboard*') ? 'active' : '' }}" href="/dashboard">
+                    <span data-feather="home"></span>
+                    Dashboard
+                    </a>
+                </li>    
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('siswa-ipa*') ? 'active' : '' }}" href="/siswa-ipa">
                     <span data-feather="user"></span>

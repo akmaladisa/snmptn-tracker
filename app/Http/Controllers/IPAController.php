@@ -43,7 +43,19 @@ class IPAController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'user_id' => 'required',
+            'matematika' => 'required|numeric|max:100|min:0',
+            "bindonesia" => 'required|numeric|max:100|min:0',
+            "binggris" => 'required|numeric|max:100|min:0',
+            'kimia' => 'required|numeric|max:100|min:0',
+            'fisika' => 'required|numeric|max:100|min:0',
+            'biologi' => 'required|numeric|max:100|min:0'
+        ]);
+
+        IPA::create( $validatedData );
+
+        return redirect('/siswa-ipa')->with("success", "Berhasil Menambah Siswa");
     }
 
     /**

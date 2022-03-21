@@ -13,11 +13,11 @@ class IPA extends Model
 
     public function siswaIPA()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, "user_id");
     }
 
     public function siswaIPS()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, "user_id");
     }
 }
