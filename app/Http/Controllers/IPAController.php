@@ -100,6 +100,10 @@ class IPAController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if( IPA::where("id", $id)->delete() ) {
+            
+            return redirect('/siswa-ipa')->with('success', 'Berhasil Menghapus Data');
+
+        }
     }
 }

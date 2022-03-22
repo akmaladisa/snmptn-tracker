@@ -53,9 +53,14 @@
                                 <a class="btn mx-1 text-white btn-sm btn-warning" href="{{ route("siswa-ipa.edit", $student->id) }}">
                                     <span data-feather="edit"></span>
                                 </a>
-                                <a onclick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-sm btn-danger" href="{{ route("siswa-ipa.destroy", $student->id) }}">
-                                    <span data-feather="trash-2"></span>
-                                </a>
+
+                                <form action="{{ route("siswa-ipa.destroy", $student->id) }}" method="post" class="d-inline">
+                                    @csrf
+                                    @method('delete')
+                                    <button onclick="return confirm('Yakin Ingin Menghapus?')" class="btn btn-sm btn-danger">
+                                        <span data-feather="trash-2"></span>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
 
